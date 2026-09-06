@@ -1,0 +1,10 @@
+European call  S0=100.0 K=100.0 r=0.050 sigma=0.20 T=1.0  N=1024
+
+quantity             analytical       explicit      Crank-Nic
+price               10.45058357    10.45059265    10.45049783
+abs error                     -       9.07e-06       8.57e-05
+delta                0.63683065     0.63683300     0.63683133
+gamma                0.01876202     0.01876155     0.01876224
+
+wall time                     -         0.0036         0.0160  (seconds)
+lattice updates               -       11291874        1047552

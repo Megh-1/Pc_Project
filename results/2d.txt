@@ -1,0 +1,13 @@
+Two correlated assets, exchange option max(S1 - S2, 0)
+S1=100.0 S2=95.0 s1=0.25 s2=0.30 rho=0.40 T=1.0
+
+Margrabe closed form : 14.45045433
+
+       N          M          updates      FDM price    abs error     time (s)     MLUP/s
+      64        171           678699    14.46789242     1.74e-02       0.0007      969.4
+     128        683         11016107    14.45607706     5.62e-03       0.0093     1178.3
+     256       2731        177583275    14.45304194     2.59e-03       0.1462     1214.6
+     512      10923       2852224683    14.45230032     1.85e-03       2.8700      993.8
+
+9-point stencil (the 4 diagonal weights come from the correlation term).
+The 3-asset case in Milestone 3 becomes a 27-point stencil in 3D.

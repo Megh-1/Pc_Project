@@ -1,0 +1,11 @@
+Spatial convergence, explicit Euler (dt set by stability => dt ~ dx^2)
+Reference price = 10.4505835722
+
+       N          M             dx      abs error      order     time (s)
+     128        173      1.562e-02      5.710e-04          -       0.0000
+     256        690      7.812e-03      1.455e-04       1.97       0.0001
+     512       2760      3.906e-03      3.626e-05       2.00       0.0007
+    1024      11038      1.953e-03      9.075e-06       2.00       0.0060
+    2048      44151      9.766e-04      2.269e-06       2.00       0.0354
+
+Order should approach 2.0 (second-order central differences in space).

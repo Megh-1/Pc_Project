@@ -1,0 +1,14 @@
+# Binaries
+bs_fdm
+bs_fdm.exe
+bs_fdm_scalar
+bs_fdm_scalar.exe
+*.o
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

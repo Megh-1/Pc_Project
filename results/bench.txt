@@ -1,0 +1,11 @@
+Sequential baseline, explicit Euler 3-point stencil (1 thread)
+flops/update = 5   bytes/update = 16   arithmetic intensity = 0.312 flop/byte
+
+       N          M          updates     time (s)     MLUP/s      GFLOP/s         GB/s
+     256        690           175950       0.0001     1905.1        9.526        30.48
+     512       2760          1410360       0.0008     1744.5        8.722        27.91
+    1024      11038         11291874       0.0057     1992.3        9.962        31.88
+    2048      44151         90377097       0.0294     3073.5       15.367        49.18
+
+Work scales as O(N^3): doubling N doubles the nodes and quadruples the
+time steps required for stability.

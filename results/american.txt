@@ -1,0 +1,9 @@
+Put option  S0=100.0 K=100.0 r=0.050 sigma=0.20 T=1.0  N=1024
+
+European (analytical) : 5.57352602
+European (FDM)        : 5.57352178   err 4.24e-06
+American (FDM)        : 6.09041128
+Early-exercise premium: 0.51688950
+
+(premium must be > 0 for an American put; this is the qualitative check
+ when no closed form exists)
